@@ -1,0 +1,10 @@
+ctrl = None
+switches = []
+switch_ids = []
+sw_to_sw_delays = {}
+link_capacities = {}
+sw_to_ctrl_delays = {}
+sent_to_sws = {}
+flow_folder = ""
+finish_computation_time = None
+finish_prioritizing_time = None

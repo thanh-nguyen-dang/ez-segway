@@ -1,0 +1,115 @@
+# These are defaults.
+NW_LATENCY_BASE = 0.960
+NW_LATENCY_MU = 0.040
+NW_LATENCY_SIGMA = 0.0
+
+FLOW_COUNT = 100
+DEFAULT_CAP = 1000
+MAX_CAP = 1000
+DEFAULT_VOL = 5
+
+# E_FREE = 0
+# E_REQUIRE = 1
+#
+# SAME = 0
+# SEG_INIT = 1
+# SEG_END = 2
+# SEG_MID_OLD = 4
+# SEG_MID_NEW = 8
+
+GOOD_TO_MOVE_MSG = 0
+COHERENT_MSG = 1
+REMOVING_MSG = 2
+ALLOCATED_MSG = 3
+ADDING_MSG = 4
+UPDATED_MSG = 5
+REMOVED_MSG = 6
+
+SAME_SEGMENT = -1
+LESS_TO_GREAT = 0
+GREAT_TO_LESS = 1
+
+# UPDATE_ADD = 0
+# UPDATE_REMOVE = 1
+
+NONE_SEGMENT_LOOP_POS = 0
+PRED_SEGMENT_LOOP_POS = 1
+OLD_IN_SEGMENT_LOOP_POS = 2  # init switch of 'old_in_loop' waits for finishing
+                             # updating in the successor segment before
+                             # sending GOOD_TO_MOVE msg to new_in_loop switch
+NEW_IN_SEGMENT_LOOP_POS = 3  # init switch of 'new_in_loop' keeps the old segment
+                             # to maintain the old short segment.
+
+NOTHING = 0
+SENT_ADDING = 1
+FINISH_ADDING = 2
+SENT_REMOVING = 3
+FINISH_REMOVING = 4
+FINISH_ALL = 5
+
+CENTRALIZED_METHOD = "centralized"
+P2P_METHOD = "p2p"
+LATENCIES_FILE = "latencies.intra"
+WEIGHTS_FILE = "weights.intra"
+ADJACENCY_FILE = "topo.intra"
+CENTROID_FILE = "centroid.intra"
+
+TOPO_ROCKETFUEL = "rf"
+TOPO_ADJACENCY = "adjacency"
+TOPO_WEIGHTED_ADJACENCY = "weighted"
+
+LINK_FAILURE_GENERATION = "link_failure"
+RANDOM_GENERATION = "random"
+MANUAL_GENERATION = "manual"
+
+HOT_SPOT_GENERATION = "hot_spot"
+RANDOM_WALK_GENERATION = "random_walk"
+THIRD_SWITCH_GENERATION = "third_sw"
+
+FLOW_FILE_NAME = "flows"
+
+DELTA_VOLUME = 1, 1
+
+UPDATING_FLOW = 0
+ADDING_FLOW = 1
+REMOVING_FLOW = 2
+
+NO_UPDATE_NEXT = 0
+UPDATE_NEXT = 1
+ADD_NEXT = 2
+REMOVE_NEXT = 3
+
+ID_NULL = -1
+
+SUSPECTING_TIME = 0.15
+SUSPECTING_TIME_SKIP_DEADLOCK = 1.5
+
+NORMAL_MODE = 0
+SPLITTING_MODE = 1
+CONGESTION_MODE = 2
+
+FINISHED_WITHOUT_DEADLOCK = 0
+FINISHED_WITH_DEADLOCK = 1
+ON_GOING = 2
+ENCOUNTER_DEADLOCK = 3
+
+NORMAL_LINK = 0
+SUSPECTING_LINK = 1
+SPLITTING_LINK = 2
+
+WAITING_TO_INSTALL = 0
+WAITING_TO_REMOVE = 1
+SPLITTING_FLOW = 2
+UPDATED_FLOW = 3
+REMOVED_FLOW = 4
+
+TIME_USING_NEW_PATH_SEPARATOR = '|'
+
+CHANGING_FLOW_EVENT = 0
+SENDING_MSG_EVENT = 1
+NO_MULT_PATH = 3
+
+DIFF_SCALE = 100000
+
+import logging
+LOG_LEVEL = logging.INFO
